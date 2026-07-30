@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cutwave — Privacy Policy</title>
+    <style>
+        :root {
+            --ink: #e8e6f5;
+            --muted: #9a94b8;
+            --bg: #0b0a14;
+            --card: #14121f;
+            --line: #241f38;
+            --cyan: #38e0d4;
+            --violet: #8b5cf6;
+            --violet-soft: #a78bfa;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', Arial, sans-serif;
+            background: var(--bg); color: var(--ink); line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+        }
+        .header {
+            background: linear-gradient(135deg, #0f1c33 0%, #1d2f6b 30%, #6d3ce0 68%, #38e0d4 100%);
+            padding: 64px 20px 56px; text-align: center; color: #fff;
+        }
+        .header img {
+            width: 108px; height: 108px; border-radius: 24px; margin-bottom: 18px;
+            box-shadow: 0 14px 38px rgba(0,0,0,0.5);
+            border: 1px solid rgba(255,255,255,0.28);
+        }
+        .header h1 { font-size: 2.1em; font-weight: 800; letter-spacing: -0.5px; }
+        .header .tag { font-size: 1.02em; opacity: 0.95; margin-top: 8px; }
+        .header .sub { font-size: 0.9em; opacity: 0.95; margin-top: 14px; font-weight: 600;
+            background: rgba(255,255,255,0.18); display: inline-block; padding: 5px 14px; border-radius: 999px; }
+        .container { max-width: 720px; margin: 0 auto; padding: 8px 18px 40px; }
+        .card {
+            background: var(--card); border: 1px solid var(--line); border-radius: 18px;
+            padding: 24px 26px; margin: 18px 0;
+        }
+        .card h2 { font-size: 1.22em; color: var(--violet-soft); margin-bottom: 10px;
+            display: flex; align-items: baseline; gap: 8px; }
+        .card h2 .dot { width: 9px; height: 9px; border-radius: 50%;
+            background: linear-gradient(135deg, var(--cyan), var(--violet)); display: inline-block; }
+        .card p, .card li { font-size: 0.99em; color: var(--ink); }
+        .card p + p { margin-top: 10px; }
+        .card ul { margin: 8px 0 4px 22px; }
+        .card li { margin: 6px 0; }
+        strong { color: #fff; }
+        a { color: var(--cyan); font-weight: 600; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .lead { font-size: 1.05em; color: var(--muted); }
+        .btn {
+            display: inline-block; margin-top: 14px; padding: 13px 24px;
+            background: linear-gradient(135deg, var(--violet), var(--cyan)); color: #0b0a14;
+            border-radius: 12px; text-decoration: none; font-weight: 700;
+        }
+        .note {
+            background: #121a2c; border-left: 4px solid var(--cyan);
+            padding: 14px 18px; border-radius: 0 12px 12px 0; margin-top: 14px;
+            font-size: 0.95em; color: var(--muted);
+        }
+        .footer { text-align: center; padding: 40px 20px; color: #5d5878; font-size: 0.82em; }
+        @media (max-width: 480px) {
+            .header { padding: 52px 18px 44px; }
+            .header h1 { font-size: 1.8em; }
+            .card { padding: 20px 20px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="icon.png" alt="Cutwave app icon">
+        <h1>Cutwave</h1>
+        <p class="tag">Automatic video editing, cut to the beat of the music</p>
+        <div class="sub">Privacy Policy · Last updated: 30 July 2026</div>
+    </div>
+
+    <div class="container">
+        <div class="card">
+            <h2><span class="dot"></span>Overview</h2>
+            <p class="lead">Cutwave turns your photos and videos into an edit that lands on every beat of the music. Your memories are the raw material of the edit — so they never leave your iPhone.</p>
+            <p>Cutwave has <strong>no accounts to create</strong>, <strong>no advertising</strong>, and <strong>no third-party analytics or tracking</strong> of any kind. We (the developer) operate <strong>no server</strong>. Your photos, your videos, your music and your finished edits stay on your device.</p>
+        </div>
+
+        <div class="card">
+            <h2><span class="dot"></span>Information We Collect</h2>
+            <p><strong>None.</strong> We do not collect, receive, sell or share your personal information. There is no sign-up, no profile, and nothing is uploaded to us — because there is no “us” to upload to.</p>
+            <p>Everything the app works with lives <strong>on your device</strong>:</p>
+            <ul>
+                <li><strong>The photos and videos you choose</strong> are copied into the app's own storage so they can be edited. You pick them through Apple's system photo picker, which hands the app only what you selected — the app never browses your library.</li>
+                <li><strong>Music you import</strong> from your device is copied into the app's storage in the same way. The 50 built-in tracks ship inside the app.</li>
+                <li><strong>Your projects</strong> — the running order, the timing, your titles and credits, your settings — are saved locally so a project is never lost.</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2><span class="dot"></span>Everything Is Computed On Your Device</h2>
+            <p>The parts of Cutwave that look like they need a cloud do not:</p>
+            <ul>
+                <li><strong>Beat and tempo detection</strong> analyses the music with Apple's on-device signal-processing framework (Accelerate). There is no machine-learning model to call and nothing is uploaded.</li>
+                <li><strong>Choosing which shots deserve more screen time</strong> uses Apple's on-device Vision framework to score image quality and spot faces. That analysis happens on your iPhone and its results never leave it.</li>
+                <li><strong>Rendering the video</strong> is done on your device's own graphics hardware.</li>
+            </ul>
+            <p>Cutwave works with <strong>no network connection at all</strong>, apart from the one optional feature below.</p>
+        </div>
+
+        <div class="card">
+            <h2><span class="dot"></span>Place Names — the One Optional Network Feature</h2>
+            <p>Cutwave can print the name of a place on your shots (“Krabi · July 2026”), taken from the location your camera already recorded in the photo. This is the <strong>only</strong> feature that uses the network, and it is <strong>switched off by default</strong>.</p>
+            <p>If you turn it on, the app sends the photo's <strong>coordinates</strong> — not the photo, not the image, not your identity — to <strong>Apple's geocoding service</strong> to get the name of the place back. That request is handled by Apple under <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple's Privacy Policy</a>. Results are cached on your device so the same place is not looked up twice. Turn the switch off and no request is ever made.</p>
+        </div>
+
+        <div class="card">
+            <h2><span class="dot"></span>Saving and Sharing Your Video</h2>
+            <p>When you save a finished edit, Cutwave asks for permission to <strong>add</strong> it to your photo library — the “add” permission only, which does not let the app read your library.</p>
+            <p>If you then share the video to another app or a social network, you are handing it to <strong>that</strong> app through Apple's system share sheet. What happens to it next is governed by the privacy policy of whichever service you chose, not by this one.</p>
+        </div>
+
+        <div class="card">
+            <h2><span class="dot"></span>Purchases</h2>
+            <p>Cutwave offers one optional <strong>one-time purchase</strong> — no subscription — that removes the watermark and the end card, raises the media limit, and unlocks 1080p and 4K export.</p>
+            <p>The purchase is processed <strong>directly by Apple</strong> through the App Store using StoreKit. We never see, receive or store your payment details, card number or Apple ID. Apple handles the transaction, the receipt and any restore, under <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple's own Privacy Policy</a>.</p>
+        </div>
+
+        <div class="card">
+            <h2><span class="dot"></span>Data Storage &amp; Deletion</h2>
+            <p>Your projects and the media copied into them are stored <strong>on your device</strong>. If your iPhone backs up to iCloud, that on-device data may be included in your own private device backup, governed by Apple's privacy policy.</p>
+            <p>You are in control:</p>
+            <ul>
+                <li><strong>Deleting a project</strong> removes its edit and the copies it holds. Your original photos and videos are never touched.</li>
+                <li><strong>Deleting the app</strong> removes all of its data from your device.</li>
+                <li>A video you already saved to your photo library stays there — it is yours; delete it from Photos if you want it gone.</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2><span class="dot"></span>Third Parties</h2>
+            <p><strong>None.</strong> Cutwave contains no advertising SDKs, no analytics services and no third-party tracking libraries. The only external party involved is <strong>Apple</strong> — for the in-app purchase (StoreKit) and, if you switch it on, for looking up place names.</p>
+        </div>
+
+        <div class="card">
+            <h2><span class="dot"></span>Children's Privacy</h2>
+            <p>Cutwave does not collect personal information, contains no advertising and no third-party content, and does not knowingly gather any data from children under 13.</p>
+        </div>
+
+        <div class="card">
+            <h2><span class="dot"></span>Support &amp; Contact</h2>
+            <p>A question, a bug, or a privacy request? We're happy to help.</p>
+            <p><strong>Email:</strong> <a href="mailto:mythadubiz@gmail.com">mythadubiz@gmail.com</a></p>
+            <a class="btn" href="mailto:mythadubiz@gmail.com?subject=Cutwave%20Support">Contact Us</a>
+            <div class="note">We may update this policy as the app evolves. Any material change will be reflected here with a new date.</div>
+        </div>
+    </div>
+
+    <div class="footer">
+        © 2026 Mythadubiz · Cutwave
+    </div>
+</body>
+</html>
