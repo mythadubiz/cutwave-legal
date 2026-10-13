@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cutwave – Deine Fotos im Takt</title>
+<meta name="description" content="Cutwave schneidet deine Fotos und Clips automatisch zum Beat der Musik – direkt auf dem iPhone.">
+<meta name="robots" content="noindex">
+<style>
+  :root { --ink:#f1effa; --muted:#a39dc2; --bg:#0b0a14; --card:#14121f; --line:#241f38; --cyan:#38e0d4; --violet:#8b5cf6; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:-apple-system,BlinkMacSystemFont,'SF Pro Display','Helvetica Neue',Arial,sans-serif; background:var(--bg);
+         color:var(--ink); line-height:1.55; -webkit-font-smoothing:antialiased; }
+  main { max-width:520px; margin:0 auto; padding:28px 16px 40px; text-align:center; }
+  .brand { display:flex; align-items:center; justify-content:center; gap:10px; font-weight:700; font-size:20px; margin-bottom:18px; }
+  .brand img { width:40px; height:40px; border-radius:10px; }
+  h1 { font-size:30px; line-height:1.15; margin-bottom:10px; letter-spacing:-0.01em; }
+  .sub { color:var(--muted); font-size:17px; margin-bottom:20px; }
+  video { width:100%; max-width:230px; aspect-ratio:9/16; border-radius:22px; background:#000; display:block; margin:0 auto 18px;
+          box-shadow:0 18px 50px rgba(0,0,0,.55); }
+  .cta { display:block; width:100%; max-width:340px; margin:0 auto 10px; padding:17px 20px; border-radius:16px; font-size:18px; font-weight:700;
+         color:#0b0a14; text-decoration:none; background:linear-gradient(90deg,var(--cyan),#a78bfa); }
+  .note { color:var(--muted); font-size:13px; margin-bottom:26px; }
+  ul { list-style:none; text-align:left; background:var(--card); border:1px solid var(--line); border-radius:16px; padding:6px 16px; margin-bottom:26px; }
+  li { padding:12px 0; border-bottom:1px solid var(--line); font-size:15px; }
+  li:last-child { border-bottom:none; }
+  li b { display:block; font-size:16px; }
+  footer { color:var(--muted); font-size:13px; }
+  footer a { color:var(--muted); }
+</style>
+</head>
+<body>
+<main>
+  <div class="brand"><img src="../icon.png" alt="">Cutwave</div>
+  <h1 id="headline">Deine Fotos im Takt</h1>
+  <p class="sub">Cutwave schneidet deine Fotos und Clips automatisch zum Beat der Musik – direkt auf deinem iPhone.</p>
+  <a class="cta" href="https://apps.apple.com/app/apple-store/id6796381718?pt=128600246&amp;ct=CW-DE-02-LP&amp;mt=8">Im App Store laden</a>
+  <p class="note">Für iPhone und iPad</p>
+  <video src="cutwave-de.mp4" poster="poster.jpg" autoplay muted loop playsinline controls preload="metadata"></video>
+  <ul>
+    <li><b>Im Takt geschnitten</b>Jeder Schnitt sitzt auf dem Beat – ganz automatisch.</li>
+    <li><b>Deine Erinnerungen als Film</b>Reisen, Strände, Porträts: in Sekunden ein fertiger Film.</li>
+    <li><b>Privat</b>Alles passiert auf deinem iPhone. Deine Aufnahmen werden nicht hochgeladen.</li>
+  </ul>
+  <a class="cta" href="https://apps.apple.com/app/apple-store/id6796381718?pt=128600246&amp;ct=CW-DE-02-LP&amp;mt=8">Im App Store laden</a>
+  <p class="note"></p>
+  <footer>
+    <p><a href="../">Datenschutz</a> · <a href="impressum.html">Impressum</a></p>
+    <p>© 2026 Mythadubiz · Cutwave</p>
+  </footer>
+</main>
+<script>
+  // Annonce Meta d'origine (?a=A|B|C, campagne CW-DE-02) : même titre que l'annonce, et jeton de campagne App Store
+  // propre à l'annonce, pour compter les téléchargements par promesse. Aucune donnée n'est stockée ni envoyée.
+  (function () {
+    var titles = { A: "Deine Fotos im Takt", B: "Deine Erinnerungen als Film", C: "Deine Fotos bleiben privat" };
+    var a = (new URLSearchParams(location.search).get("a") || "").toUpperCase();
+    if (!titles[a]) return;
+    document.getElementById("headline").textContent = titles[a];
+    document.querySelectorAll("a.cta").forEach(function (el) {
+      el.href = "https://apps.apple.com/app/apple-store/id6796381718?pt=128600246&ct=CW-DE-02-" + a + "&mt=8";
+    });
+  })();
+</script>
+</body>
+</html>
