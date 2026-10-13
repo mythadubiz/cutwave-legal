@@ -50,11 +50,11 @@
   </footer>
 </main>
 <script>
-  // Annonce Meta d'origine (?a=A|B|C, campagne CW-DE-02) : même titre que l'annonce, et jeton de campagne App Store
+  // Annonce Meta d'origine (a.html/b.html/c.html, ou ?a=A|B|C ; campagne CW-DE-02) : même titre que l'annonce, et jeton de campagne App Store
   // propre à l'annonce, pour compter les téléchargements par promesse. Aucune donnée n'est stockée ni envoyée.
   (function () {
     var titles = { A: "Deine Fotos im Takt", B: "Deine Erinnerungen als Film", C: "Deine Fotos bleiben privat" };
-    var a = (new URLSearchParams(location.search).get("a") || "").toUpperCase();
+    var a = (document.documentElement.getAttribute("data-angle") || new URLSearchParams(location.search).get("a") || "").toUpperCase();
     if (!titles[a]) return;
     document.getElementById("headline").textContent = titles[a];
     document.querySelectorAll("a.cta").forEach(function (el) {
